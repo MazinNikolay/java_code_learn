@@ -9,9 +9,10 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
+//Сделал сериалайзер, но с ни тоже не работает
 public class MyDateSerializer extends JsonSerializer<LocalDateTime> {
     private static final DateTimeFormatter FORMATTER =
-            DateTimeFormatter.ofPattern("yyyy:MM:dd:HH:mm:ss:SSS").withLocale(Locale.getDefault());
+            DateTimeFormatter.ofPattern("yyyy:MM:dd##:HH:mm:ss:SSS");
 
     @Override
     public void serialize(LocalDateTime date, JsonGenerator gen, SerializerProvider serializerProvider)
