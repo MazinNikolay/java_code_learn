@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class JavaCodeLearnApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(JavaCodeLearnApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(JavaCodeLearnApplication.class, args);
+    }
 }
